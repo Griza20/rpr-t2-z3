@@ -32,9 +32,14 @@ public class Main
             System.out.print(l.get(i)+" ");
         }
         System.out.println();
-        System.out.println("Min = "+Matematika.min(l));
-        System.out.println("Max = "+Matematika.max(l));
-        System.out.println("Mean = "+Matematika.mean(l));
-        System.out.println("Devijacija = "+Matematika.deviation(l));
+        try {
+            System.out.println("Max = " + Matematika.max(l));
+            System.out.println("Mean = " + Matematika.mean(l));
+            System.out.println("Devijacija = " + Matematika.deviation(l));
+            System.out.println("Min = " + Matematika.min(l));
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
     }
 }
